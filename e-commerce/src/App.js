@@ -1,11 +1,23 @@
 import './App.css';
-import React, { Component }  from 'react';
+import React  from 'react';
+import { Routes, Route } from 'react-router-dom';
+
+// Components
+import Header from './Components/Header';
 
 function App() {
   return (
     <div className="App">
 
-          Learn React
+        
+        <main>
+        <Routes>
+          <Route path="/" element={<Header />}/>
+        </Routes>
+        
+        
+        
+        </main>
        
       
     </div>

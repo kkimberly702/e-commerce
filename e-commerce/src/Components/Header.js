@@ -1,5 +1,8 @@
 import React from 'react';
 import '../Components/Header.css';
+import { Link } from 'react-router-dom'
+//COMPONENTS
+import Home from './Home';
 
 // ICONS
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
@@ -12,6 +15,7 @@ function Header() {
         <div className='header'>
 {/* LOGO */}
 <FavoriteBorderIcon className='logo'/>
+<img className='logo-ulta' src='images/ulta-logo.png'/>
 
 {/* SEARCH BAR */}
             <div className='search-bar'>
@@ -21,7 +25,7 @@ function Header() {
 
 {/* OPTIONS BAR */}
             <div className='options-bar'>
-                <span className='option1'>Hello, Gorgeous </span>
+                <span className='option1'>Hello, Gorgeous  </span>
 
             </div>
             <div className='options-bar'>

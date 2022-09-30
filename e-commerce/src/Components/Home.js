@@ -13,19 +13,34 @@ function Home() {
 
 
         <div className="home-row">
-            <Product />
-            <Product />
-            <Product />
-            {/* {Product} */}
+            <Product 
+                brand="NYX Professional Makeup" 
+                title="Soft Matte Lip Cream" 
+                price={10.99} 
+                image={'images/Nyx-lipcream.png'} 
+                rating={2}/>
+            
+            
+            <Product 
+                brand="NYX Professional Makeup" 
+                title="Soft Matte Lip Cream" 
+                price={10.99} 
+                image={'images/Nyx-lipcream.png'} 
+                rating={2}/>
         </div>
 
         <div className="home-row">
-            {/* {Product} */}
-            {/* {Product} */}
-            {/* {Product} */}
+        <Product 
+                brand="NYX Professional Makeup" 
+                title="Soft Matte Lip Cream" 
+                price={10.99} 
+                image={'images/Nyx-lipcream.png'} 
+                rating={2}/>
+           
         </div>
 
         <div className="home-row">
+
             {/* {Product} */}
             {/* {Product} */}
         </div>

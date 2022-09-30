@@ -1,26 +1,29 @@
 import React from 'react'
 import './Product.css'
 
-function Product() {
+
+function Product({ id, brand, title, price, image, rating }) {
   return (
     <div className='product'>
         <div className='product-info'>
             <section className='brand'>
-                NYX PROFESSIONAL MAKEUP
+                {brand}
             </section>
             <section className='type'>
-                Soft Matte Lip Cream
+                {title}
             </section>
             <section className='price'>
-                <strong>$10.99</strong>
+                <strong>${price}</strong>
             </section>
             <section className='product-rating'>
-                <p>	&#x2605;</p>
-                <p>	&#x2605;</p>
+                {Array(rating)
+                    .fill()
+                    .map((_, i) => (<p>⭐</p>))}
+            
             </section>
             
 
-        <img src="images/Nyx-lipcream.png" alt='nyx soft matte lip cream' />
+        <img src={image} alt='nyx soft matte lip cream' />
         <button>Add to basket</button>
            
         </div>
